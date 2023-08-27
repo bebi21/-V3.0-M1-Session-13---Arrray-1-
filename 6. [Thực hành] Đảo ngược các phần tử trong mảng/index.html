@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // VD: 1,3,5,12,65,98
+      let n = prompt("Nhập vào đây số bất kỳ được ngăn cách bởi dấu ,");
+      let convert = n.split(",");
+      document.write("Chuyển đổi string sang array", convert, "<br>"); // convert=[1,3,5,12,65,98]
+
+      let array = []; // array =[98,65,12,5,3,1]
+      for (i = convert.length - 1; i >= 0; i--) {
+        array.push(convert[i]);
+        
+      }
+
+      document.write("Đảo ngược các phần tử", array);
+    </script>
+  </body>
+</html>

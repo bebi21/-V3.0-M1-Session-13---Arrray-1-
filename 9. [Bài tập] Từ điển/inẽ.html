@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let english = ["one", "two", "three"];
+
+      let vietnam = ["mot", "hai", "ba"];
+
+      let word = prompt("nhap  tieng anh");
+
+      let check = true;
+      for (let i = 0; i < english.length; i++) {
+        if (english[i] === word) {
+          alert(vietnam[i]);
+          check = false;
+          break;
+        }
+      }
+      if (check) {
+        alert("ko co");
+      }
+    </script>
+  </body>
+</html>

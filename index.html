@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        Array: lưu  trữ tập hợp  phần tử(element khác nhau ) lại  với nhai
+        array : kiểu dữ liệu  phức tạp
+        -giá trị  lưuu  ở vùng nhớ HEAP
+        -kiểu tham chiếu
+        1 cách khơi  tạo mảng
+        -mảng chứa các phần tử ngăn cách với nhau  bởi dấu phẩy
+        -mảng có thể chứa tất cả các kiểu dữ liệu  khác nhau
+        2 cách thuộc  tính riêng của mảng 
+        -index: là chỉ mục  các phần tủw trong mảng:
+          + mảng chỉ mục  của mảng đc đánh số  bắt đầu từ 0
+          +length:  độ dài của mảng
+          + đầu trừ cuối cộng 1
+
+        3 typeof của array là object
+        kiểm tra có phải mảng hay không sẽ là 
+        console.log(Array.isArray("5")
+        4.Truy  cập  các phần tử trong mảng
+           tên mảng [index];
+           nếu mà khai bào phần tử chưa hiênj trong mảng thì nó sẽ là undifine
+        5 CRUD với mảng
+        -C : Create :  thêmmới phần tử trong mảng
+         +dùng push() phương thức thêm phần tử vào vị trí cuói cùng của mảng
+         +unshift() :thêm phần tử vào đầu mảng
+         +thêm trực tiếp theop  chỉ số index
+         +splice(1,0,"hue") trong đó
+
+            1:  là vị  trí muốn thêm vào
+
+            0:  số phần tử muốn xóa
+
+            "hue": phần từ muốn thêm  vào
+
+        -R : Read :  đọc các phhanf tử trong mảng
+
+           +for :   thường 
+
+           +for(const key in student){
+            console.log()
+              }
+           forr in : in ra chỉ mục  index của mảng
+            + for - of: in  ra các phần từ trong mảng
+        - U : Update: Cập nhật phần tử trong mảng
+           +update trực tiếp
+            +splice:  tương tác trực tiếp với mảng cũ
+
+        - D:  Delete: xóa phần tử trong mảng
+         +pop(): xóa phần tử cuối cùng trong mảng
+         +shift():xóa phần tử đầu tiên của mảng
+         +splice(): 
+***************************************************
+         1 các phương thức làm việc với mảng
+         1 slide
+         -cắt sao chép ra 1 mảng mới
+           students.slide(1,2)
+           1 ở đây  là vị  trí muốn cắt
+           2 ở đây là cắt đến vị  trí thứ 2
+        
+         2 sort
+        -sắp xếp các phần tử trong mảng theo  bảng mã asci 
+
+         3.reverse() :đảo ngược  lại  của mảng
+         vd 1,2,3,4
+           ==>4,3,2,1
+         4 split() cắt chuỗi thành mảng  
+           console.log(text.split(" ") ) các chỗ có khoảng cách ở giữa là 1 phần tử
+
+
+
+         5 join() *gộp  các phần tử trong mảng thành chuỗi   
+        console.log(student.join ( " ")
+
+        6 slice() :cắt xong tạo  1 mảng mới ko ảnh hưởng tới mản ban đàu, dùng đc cả string với array
+         ăn theo  index.
+         string bắt đầu từ 1
+         array  bắt đầu từ 0
+        ví dụ slice(3) - 
+         cắt tất cả các vị  trí từ 3 trở về 0, 1
+         slice(4,7) - 
+         cắt  tất cả các vị trí từ 4 - đến  7
+         
+         7. toString() chuyển mảng thành chuỗi , 
+         sự khác nhau giưã toString và join()  là toString dùng number chuyển thanhf string
+         8. indexOf() kiểm tra phần tử  có trong mảng hay  không
+          nếu có trả về vị  trí  của nó đầu tiên tìm thấy
+          nếu không có trả về  -1
+         9. includes :  tìm kiếm phần tử trả về true/false
+         10.toUpperCase(): chuyển chữ thưởng thành chữ hoa : ko  ảnh hưởng đén ban đầu
+         11. toUpperCase(): chuyển chữ thưởng thành chữ hoa 
+         12. charAt() lấy kí tự ví trí của chuỗi
+         13. map()
+         14 reduce()
+         15 filter()
+         16.forEarch)(
+         17. find()    
+         18. findIndex()
+         18 every()
+         19 some()
+         20 fill()
+         21 concat()
+         22 endWidth
+         23 startWidth
+         )
+
+
+         let
+
+
+     -->
+    <script>
+      //   let text = "hung beo qua";
+      //   let result = text.split(" ");
+      //   for (let i = 0; i <= result.length; i++) {
+      //
+      //   result[i] = result[i].charAt(0).toUpperCase() + result[i].slice;
+      //   }
+      //   console.log(result.join(""));
+      //   let text = "hung beo qua";
+      //   let result = text.split(" ");
+      //   console.log(result);
+      //   for (let i = 0; i <= result.length; i++) {
+      //     let a = result[i].split("");
+      //     console.log(a);
+      //     a[1] = a[1].toUpperCase();
+      //     console.log(a.join());
+
+      //     // console.log(a[0]);
+      //   }
+      //   a += a;
+
+      //   console.log(result.join(" "));
+      //   let input = "hưng béo quá uf s";
+      //   const words = input.split(" ");
+      //   let result = "";
+      //   for (const i in words) {
+      //     let word = words[i].split("");
+      //     for (const letterIndex in word) {
+      //       if (letterIndex == 0) {
+      //         word[letterIndex] = word[letterIndex].toUpperCase();
+      //       }
+      //     }
+      //     result += word.join("") + " ";
+      //   }
+      //   console.log(result);
+
+      let text = "hung Beo Qua Alo ";
+      let result = text.split(" ");
+      for (let i = 0; i <= result.length; i++) {
+        let a = result[i].split("");
+        console.log(a);
+        a[1] = a[1].toUpperCase();
+        console.log(a.join());
+      }
+    </script>
+  </body>
+</html>

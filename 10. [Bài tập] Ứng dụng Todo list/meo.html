@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let todoList = ["Go to bed at 11pm", "Do homework at 8pm"];
+      //   let input = prompt("moi nhap c/r/u/d");
+
+      //   let inputNew = prompt("moi nhap them");
+      //   do {
+      //     if (input === "c") {
+      //       inputNew = prompt("moi nhap them");
+      //       let newToDoList = todoList + todoList.push(inputNew);
+      //       document.write(newToDoList);
+      //     }
+      //   } while (inputNew != "-1");
+      //   input = prompt("moi nhap c/r/u/d");
+      //   if (input === "r") {
+      //     for (let i = 0; i < newToDoList.length; i++) {
+      //       document.write(` ${i}. ${newToDoList[i]} <br>`);
+      //     }
+      //   }
+
+      //   if (input === "u") {
+      //     let vitri = +prompt("nhap  vi tri(vd0,1)");
+      //     let noidung = prompt("noi dung update");
+      //     let chance = todoList[vitri].splice();
+      //   }
+      let input;
+      let toDoList = ["Go to bed at 11pm", "Do homework at 8pm"];
+      let newToDoList = toDoList + toDoList.push(input);
+      let add;
+      do {
+        input = prompt("moi nhap c/r/u/d/q");
+        if (input == "c") {
+          do {
+            add = prompt("them  hanh  dong");
+            if (add == -1) {
+              break;
+            } else {
+              toDoList.push(add);
+            }
+          } while (add != "-1");
+          console.log(toDoList);
+        } else if (input == "r") {
+          alert(toDoList);
+        } else if (input == "u") {
+          let vitri = +prompt("vi tri muon update");
+          let noidung = prompt("noi dung update");
+          toDoList[vitri] = noidung;
+          alert(toDoList);
+        } else if (input == "d") {
+          let vitri = +prompt("vi tri muon xoa");
+          toDoList.splice(vitri, 1);
+          alert(toDoList);
+        }
+      } while (input != "q");
+    </script>
+  </body>
+</html>

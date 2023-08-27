@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let array = [];
+      for (let i = 0; i < 5; i++) {
+        array.push(i);
+      }
+      document.write("Sử dụng phương thức push()", array, "<br>"); // array =[0,1,2,3,4]
+
+      let a = 10;
+      array.unshift(a);
+      document.write("Sử dụng phương thức unshift()", array, "<br>"); // array=[10,0,1,2,3]
+
+      array.pop();
+      document.write("Sử dụng phương thức pop()", array, "<br>"); // aray=[10,0,1,2,3]
+
+      array.shift();
+      document.write("Sử dụng phương thức shift()", array, "<br>"); // array= [0,1,2,3]
+
+      array.splice(1, 2);
+      document.write("Sử dụng phương thức splice()", array, "<br>"); // array =[0,3]
+    </script>
+  </body>
+</html>
